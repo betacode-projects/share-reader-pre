@@ -15,42 +15,10 @@
         <p><a href="./index.html">ホーム</a> > ファイルをアップロード > QRコード読み込み</p>
         <hr>
         <div style="width: 500px" id="reader"></div>
-        <a href="#">ダウンロード用QRコード表示</a> | 
-        <a href="#">スマホに権限を移動</a> | 
-        <a href="#">ファイルを破棄</a>
+        <a href="#" id="downloadQR" onclick="onShowDownloadQR();">ダウンロード用QRコード表示</a> | 
+        <a href="#" id="movePermission" onclick="onMovePermission();">ファイル権限を移動</a> | 
+        <a href="#" id="clearFile">ファイルを破棄</a>
     </body>
 </html>
-<script>
-function onScanSuccess(qrCodeMessage) {
-	// handle on success condition with the decoded message
-}
-
-var html5QrcodeScanner = new Html5QrcodeScanner(
-	"reader", { fps: 10, qrbox: 250 });
-html5QrcodeScanner.render(onScanSuccess);
-
-
-var html5QrcodeScanner = new Html5QrcodeScanner(
-    "reader", { fps: 10, qrbox: 250 });
-        
-function onScanSuccess(qrCodeMessage) {
-    // handle on success condition with the decoded message
-    html5QrcodeScanner.clear();
-    // ^ this will stop the scanner (video feed) and clear the scan area.
-}
-
-html5QrcodeScanner.render(onScanSuccess);
-
-function onScanSuccess(qrCodeMessage) {
-    // handle on success condition with the decoded message
-}
-
-function onScanError(errorMessage) {
-    // handle on error condition, with error message
-}
-
-var html5QrcodeScanner = new Html5QrcodeScanner(
-    "reader", { fps: 10, qrbox: 250 });
-html5QrcodeScanner.render(onScanSuccess, onScanError);
-</script>
 <script src="./lib/sender.js"></script>
+<script src="./lib/qr_reader.js"></script>
