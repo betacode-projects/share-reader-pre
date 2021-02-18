@@ -13,7 +13,10 @@
         <h1>Share Reader</h1>
         <p><a href="./index.html">ホーム</a> > ダウンロード待ち受け > ファイルをダウンロード</p>
         <hr>
-        <p>ダウンロード中です。しばらくお待ちください...</p>
+        <div id="status">
+            <p>ダウンロード中です。しばらくお待ちください...</p>
+            <p>ダウンロードが始まらない場合は、<a id="download" href="#" onclick="auth_tokens();">ここクリック</a>してダウンロードしてください</p>
+        </div>
     </body>
 </html>
 <script src="./lib/download.js"></script>
