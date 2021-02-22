@@ -16,12 +16,13 @@
         <h1>Share Reader</h1>
         <p><a href="./index.html">ホーム</a> > ファイルをアップロード > QRコード読み込み</p>
         <hr>
-        <div id="qr-scanner">
-            <div style="width: 500px" id="reader"></div>
+        <div>
+            <div id="qr-scanner">
+                <div style="width: 500px" id="reader"></div>
+            </div>
+            <div style="display:none" id="download-qr"></div>
+            <div style="display:none" id="move-permission"></div>
         </div>
-        <div style="display:none" id="download-qr"></div>
-        <div style="display:none" id="move-permission"></div>
-        <br>
         <a href="#" id="downloadQR">ダウンロード用QRコード表示</a> | 
         <a href="#" id="movePermission">ファイル権限を移動</a> | 
         <a href="#" id="clearFile">ファイルを破棄</a>
