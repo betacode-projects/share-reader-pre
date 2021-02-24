@@ -9,7 +9,7 @@
         <script src="./js/html5-qrcode.min.js"></script>
         <script src="./js/jquery.qrcode.min.js"></script>
         <script src="./lib/default.js"></script>
-        <script src="./lib/func.js"></script>
+        <script src="./lib/modules.js"></script>
         <title>Share Reader</title>
     </head>
     <body>
@@ -27,6 +27,7 @@
         <a href="#" id="movePermission">ファイル権限を移動</a> | 
         <a href="#" id="clearFile">ファイルを破棄</a>
         <br>
+        <div id="status"></div>
         <div id="file-info"></div>
         <div>ダウンロード数: <span id="count">0</span></div>
         <div id="history">
@@ -34,7 +35,6 @@
     </body>
 </html>
 <script src="./lib/sender.js"></script>
-<script src="./lib/qr_reader.js"></script>
 <style>
 
 
